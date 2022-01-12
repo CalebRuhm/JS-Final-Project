@@ -41,17 +41,22 @@
       document.querySelector(".searchBar").value = "";
       let searchBox = document.querySelector(".searchBox");
       searchBox.classList.remove("searchBox2");
-      let card = document.querySelector(".card-container");
-      card.style.backgroundColor = "";
-      card.style.border = "";
+      let cardContainer = document.querySelector(".card-container");
+      cardContainer.style.backgroundColor = "";
+      cardContainer.style.border = "";
     })
   }
   
   search();
+
   // Initial State
-  let card = document.querySelector(".card-container");
-  card.style.backgroundColor = "rgba(255, 255, 255, 0)";
-  card.style.border = 'none';
+  let cardContainer = document.querySelector(".card-container");
+  cardContainer.style.backgroundColor = "rgba(255, 255, 255, 0)";
+  cardContainer.style.border = 'none';
   let searchBox = document.querySelector(".searchBox");
   searchBox.classList.add("searchBox2");
+
+// Light / Dark mode toggle 
+let toggle = document.querySelector(".toggle");
+let card = document.querySelector(".card");
 })();
