@@ -72,7 +72,7 @@
 
   const searchBlue = document.querySelector(".searchBox");
   searchBlue.addEventListener("input", (event) => {
-    if (event.target.value == "Blue") {
+    if (event.target.value == "Blue" || event.target.value == "blue") {
       document.querySelector(".blueScreen").classList.remove("hidden");
     }
   })
