@@ -175,8 +175,3 @@ input:checked + .slider:before {
 .info::first-letter {
   text-transform: uppercase;
 }
-
-.light-mode {
-  background: none;
-  background-color: #fff;
-}

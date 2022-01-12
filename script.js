@@ -8,6 +8,9 @@
    + "&units=metric&appid="
    + apiKey;
 
+  // Search bar to update URL City
+
+
   // Axios to get API
   axios({
     method: "GET",
@@ -15,7 +18,6 @@
   })
   // Push axios response data to html
   .then((response) => {
-    console.log(response);
     const cityName = response.data.name;
     const temp = response.data.main.temp;
     const newTemp = Math.round((temp * 9 / 5) + 32);
@@ -26,12 +28,11 @@
     let newWind = Math.round((wind / 1.609344) * 100) / 100;
     document.querySelector(".city").textContent = cityName;
     document.querySelector(".temperature").textContent = newTemp + "°" + "F";
-    document.querySelector(".weatherIcon").src = "http://openweathermap.org/img/wn/" + icon +"@2x.png";
+    document.querySelector(".weatherIcon").src = "https://openweathermap.org/img/wn/" + icon +"@2x.png";
     document.querySelector(".info").textContent = detail;
     document.querySelector(".humidity").textContent = `Humidity: ${humidity}%`;
     document.querySelector(".wind").textContent = `${newWind} mp/h`;
   });
 
-  // Search bar to update URL City
 
 })();
