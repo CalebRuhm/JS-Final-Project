@@ -62,11 +62,29 @@ body {
 }
 
 input:checked + .slider {
-  background-color: #ffaf5f;
+  background-color: #6200ee;
 }
 
 input:checked + .slider:before {
   transform: translateX(26px);
+}
+
+/* Search Text */
+.search {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  opacity: 1;
+  transition: 0.3s ease;
+}
+
+
+.searchText {
+  color: #fff;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 1.2;
 }
 
 /* Weather card main */
@@ -106,6 +124,11 @@ input:checked + .slider:before {
   padding: 10px;
 }
 
+.searchBox2 {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 36.5px;
+}
+
 .searchBox input {
   width: 100%;
   padding: 15px;
@@ -117,7 +140,7 @@ input:checked + .slider:before {
 }
 
 .searchBox input:focus {
-  outline: 2px solid #6200ee;
+  outline: 1px solid #fff;
 }
 
 .fa-search {
@@ -130,7 +153,7 @@ input:checked + .slider:before {
 }
 
 .fa-search:hover {
-  color: #6200ee;
+  color: #fff;
   cursor: pointer;
 }
 
@@ -183,3 +206,8 @@ input:checked + .slider:before {
 .hidden {
   display: none;
 }
+
+.fadeOut {
+  opacity: 0;
+}
+

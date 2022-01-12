@@ -28,7 +28,7 @@
       document.querySelector(".weatherIcon").src = "https://openweathermap.org/img/wn/" + icon +"@2x.png";
       document.querySelector(".info").textContent = detail;
       document.querySelector(".humidity").textContent = `Humidity: ${humidity}%`;
-      document.querySelector(".wind").textContent = `${newWind} mp/h`;
+      document.querySelector(".wind").textContent = `Wind: ${newWind}mp/h`;
     });
   }
 
@@ -39,12 +39,19 @@
       displayWeather(city);
       document.querySelector(".weatherIcon").classList.remove("hidden");
       document.querySelector(".searchBar").value = "";
+      let searchBox = document.querySelector(".searchBox");
+      searchBox.classList.remove("searchBox2");
+      let card = document.querySelector(".card-container");
+      card.style.backgroundColor = "";
+      card.style.border = "";
     })
   }
   
   search();
-
-  // Initial Page State
-  document.querySelector(".weatherIcon").classList.add("hidden");
-
+  // Initial State
+  let card = document.querySelector(".card-container");
+  card.style.backgroundColor = "rgba(255, 255, 255, 0)";
+  card.style.border = 'none';
+  let searchBox = document.querySelector(".searchBox");
+  searchBox.classList.add("searchBox2");
 })();
