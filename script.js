@@ -67,6 +67,7 @@
 // BSOD Easter Egg
   document.querySelector("#jokeBtn").addEventListener("click", () => {
     document.querySelector(".blueScreen").classList.add("hidden");
+    document.querySelector(".searchBar").value = "";
   });
 
   const searchBlue = document.querySelector(".searchBox");
