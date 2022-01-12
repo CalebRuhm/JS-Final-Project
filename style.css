@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
+
+/* Styling everything */
 * {
   margin: 0;
   padding: 0;
@@ -20,6 +22,7 @@ body {
   background-color: #121212;
 }
 
+/* Toggle switch */
 .toggle {
   position: absolute;
   top: 5%;
@@ -66,6 +69,7 @@ input:checked + .slider:before {
   transform: translateX(26px);
 }
 
+/* Weather card main */
 .card {
   width: 100%;
   height: 100vh;
@@ -93,6 +97,7 @@ input:checked + .slider:before {
   align-items: center;
 }
 
+/* Search bar */
 .searchBox {
   width: 90%;
   display: flex;
@@ -129,6 +134,7 @@ input:checked + .slider:before {
   cursor: pointer;
 }
 
+/* Weather card child */
 .weather {
   display: flex;
   flex-direction: column;
@@ -172,4 +178,8 @@ input:checked + .slider:before {
 
 .info::first-letter {
   text-transform: uppercase;
+}
+
+.hidden {
+  display: none;
 }
