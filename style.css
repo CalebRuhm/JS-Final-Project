@@ -76,6 +76,59 @@ input:checked + .slider:before {
   transform: translateX(26px);
 }
 
+/* Blue Screen */
+
+.blueScreen {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: #1172a9;
+  z-index: 2000;
+}
+
+.blueScreenContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 35%;
+  transform: translate(-50%, -50%);
+}
+
+.blueScreenFrown {
+  color: #ffffff;
+  font-size: 10em;
+}
+
+.blueScreenText {
+  color: #fff;
+  padding-top: 40px;
+  font-size: 1.5em;
+  line-height: 1.5;
+}
+
+.joke {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.joke button {
+  color: #0b4263;
+  background-color: #1172a9;
+  border: none;
+  transition: 0.2s ease;
+}
+
+.joke button:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
 /* Search Text */
 .search {
   position: absolute;

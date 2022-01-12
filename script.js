@@ -45,10 +45,8 @@
       cardContainer.style.backgroundColor = "";
       cardContainer.style.border = "";
       cardContainer.style.backdropFilter = "";
-      searchBox.classList.remove("searchBox3");
     })
   }
-  
   search();
 
   // Initial State
@@ -65,5 +63,17 @@
   toggle.addEventListener('change', () => {
     document.body.classList.toggle("light");
   });
+
+// BSOD Easter Egg
+  document.querySelector("#jokeBtn").addEventListener("click", () => {
+    document.querySelector(".blueScreen").classList.add("hidden");
+  });
+
+  const searchBlue = document.querySelector(".searchBox");
+  searchBlue.addEventListener("input", (event) => {
+    if (event.target.value == "Blue") {
+      document.querySelector(".blueScreen").classList.remove("hidden");
+    }
+  })
 
 })();
