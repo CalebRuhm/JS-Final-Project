@@ -1,6 +1,6 @@
 (function () {
 
-  // Converts variable to usable URL string
+  // Converts variable to usable API URL string
   const apiKey = "fada96de47ae8a516ca0917a1196a438";
   let city = "Saratoga";
   const url = "https://api.openweathermap.org/data/2.5/weather?q="
@@ -8,11 +8,12 @@
    + "&units=metric&appid="
    + apiKey;
 
+  // Axios to get API
   axios({
     method: "GET",
     url: url,
   })
-  // Push axios response to html
+  // Push axios response data to html
   .then((response) => {
     console.log(response);
     const cityName = response.data.name;
@@ -30,5 +31,7 @@
     document.querySelector(".humidity").textContent = `Humidity: ${humidity}%`;
     document.querySelector(".wind").textContent = `${newWind} mp/h`;
   });
+
+  // Search bar to update URL City
 
 })();
