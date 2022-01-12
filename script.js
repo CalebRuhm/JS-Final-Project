@@ -64,9 +64,6 @@
   const card = document.querySelector(".card-container");
   toggle.addEventListener('change', () => {
     document.body.classList.toggle("light");
-    card.classList.toggle("light");
-    searchBox.classList.toggle("searchBox3");
-  })
-
+  });
 
 })();

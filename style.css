@@ -19,12 +19,12 @@
 }
 
 body {
-  background-image: url(img/Cloudy.svg);
+  background-image: url(img/bkg3.jpg);
   background-size: cover;
 }
 
 body.light {
-  background-image: url(img/day.svg);
+  background-image: url(img/bkg5.jpg);
 
   background-size: cover;
 }
@@ -99,12 +99,6 @@ input:checked + .slider:before {
   height: 100vh;
 }
 
-.card .light {
-  background-color: rgba(18, 18, 18, 0.5);
-  border-radius: 50px;
-  border: 2px solid rgba(18, 18, 18, 0.2);
-}
-
 .card-container {
   width: 45vw;
   height: 45vh;
@@ -137,12 +131,8 @@ input:checked + .slider:before {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 36.5px;
   border: 2px solid rgba(255, 255, 255, 0.2);
-}
-
-.searchBox3 {
-  background-color: rgba(18, 18, 18, 0.5);
-  border-radius: 36.5px;
-  border: 2px solid rgba(18, 18, 18, 0.2);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
 }
 
 .searchBox input {
