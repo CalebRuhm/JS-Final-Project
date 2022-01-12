@@ -1,15 +1,11 @@
 (function () {
-
   // Converts variable to usable API URL string
   const apiKey = "fada96de47ae8a516ca0917a1196a438";
-  let city = "Saratoga";
+  let city = "Kyoto";
   const url = "https://api.openweathermap.org/data/2.5/weather?q="
    + city
    + "&units=metric&appid="
    + apiKey;
-
-  // Search bar to update URL City
-
 
   // Axios to get API
   axios({
@@ -34,5 +30,17 @@
     document.querySelector(".wind").textContent = `${newWind} mp/h`;
   });
 
+
+  // Search bar event listener calls search function
+  document.querySelector(".searchBtn").addEventListener("click", (e) => {
+    search();
+  })
+  
+  // Search function to update city
+  const search = (city) => {
+    let searchVale = document.querySelector(".searchBar").value;
+    city = searchVale;
+    console.log(city);
+  }
 
 })();
