@@ -44,19 +44,29 @@
       let cardContainer = document.querySelector(".card-container");
       cardContainer.style.backgroundColor = "";
       cardContainer.style.border = "";
+      cardContainer.style.backdropFilter = "";
+      searchBox.classList.remove("searchBox3");
     })
   }
   
   search();
 
   // Initial State
-  let cardContainer = document.querySelector(".card-container");
+  const cardContainer = document.querySelector(".card-container");
   cardContainer.style.backgroundColor = "rgba(255, 255, 255, 0)";
   cardContainer.style.border = 'none';
-  let searchBox = document.querySelector(".searchBox");
+  cardContainer.style.backdropFilter = "none";
+  const searchBox = document.querySelector(".searchBox");
   searchBox.classList.add("searchBox2");
 
 // Light / Dark mode toggle 
-let toggle = document.querySelector(".toggle");
-let card = document.querySelector(".card");
+  const toggle = document.querySelector("#toggle");
+  const card = document.querySelector(".card-container");
+  toggle.addEventListener('change', () => {
+    document.body.classList.toggle("light");
+    card.classList.toggle("light");
+    searchBox.classList.toggle("searchBox3");
+  })
+
+
 })();

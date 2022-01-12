@@ -18,6 +18,17 @@
   background: #6200ee;
 }
 
+body {
+  background-image: url(/img/Cloudy.svg);
+  background-size: cover;
+}
+
+body.light {
+  background-image: url(/img/day.svg);
+
+  background-size: cover;
+}
+
 /* Toggle switch */
 .toggle {
   position: absolute;
@@ -40,7 +51,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #333;
+  background-color: #6200ee;
   transition: .3s ease;
   border-radius: 34px;
 }
@@ -58,7 +69,7 @@
 }
 
 input:checked + .slider {
-  background-color: #6200ee;
+  background-color: #fd5e53;
 }
 
 input:checked + .slider:before {
@@ -86,9 +97,12 @@ input:checked + .slider:before {
 .card {
   width: 100%;
   height: 100vh;
-  background-color: #121212;
-  /* background: url(img/bkg.svg); */
-  background-size: cover;
+}
+
+.card .light {
+  background-color: rgba(18, 18, 18, 0.5);
+  border-radius: 50px;
+  border: 2px solid rgba(18, 18, 18, 0.2);
 }
 
 .card-container {
@@ -122,6 +136,13 @@ input:checked + .slider:before {
 .searchBox2 {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 36.5px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.searchBox3 {
+  background-color: rgba(18, 18, 18, 0.5);
+  border-radius: 36.5px;
+  border: 2px solid rgba(18, 18, 18, 0.2);
 }
 
 .searchBox input {
