@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
-
+  overflow: hidden;
 }
 
 *::selection {
@@ -71,8 +71,8 @@ input:checked + .slider:before {
 }
 
 .card-container {
-  width: 42vw;
-  height: 42vh;
+  width: 45vw;
+  height: 45vh;
   max-width: 750px;
   position: absolute;
   top: 50%;
@@ -137,30 +137,39 @@ input:checked + .slider:before {
 
 .weather h2 {
   color: #fff;
-  font-size: 3em;
+  font-size: 4em;
   font-weight: 900;
+  letter-spacing: 1.2;
 }
 
 .temperature {
-  font-size: 2em;
+  font-size: 3em;
   color: #fff;
   padding: 10px 0px;
-  font-weight: 500;
+  font-weight: 400;
+  letter-spacing: 1.2;
+}
+
+.weatherRow {
+  display: flex;
+  align-items: center;
 }
 
 .weatherInfo {
-  /* background-color: royalblue; */
   display: flex;
   flex-direction: column;
-  position: absolute;
-  bottom: 10%;
 }
 
 .info, .wind, .humidity{
   color: #fff;
   font-size: 1.3em;
-  font-weight: 400;
-  /* padding: 5px 0px; */
+  font-weight: 500;
+  letter-spacing: 1.2;
+  padding: 5px 0px;
+}
+
+.info::first-letter {
+  text-transform: uppercase;
 }
 
 .light-mode {
