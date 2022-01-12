@@ -19,12 +19,12 @@
 }
 
 body {
-  background-image: url(/img/Cloudy.svg);
+  background-image: url(img/Cloudy.svg);
   background-size: cover;
 }
 
 body.light {
-  background-image: url(/img/day.svg);
+  background-image: url(img/day.svg);
 
   background-size: cover;
 }
